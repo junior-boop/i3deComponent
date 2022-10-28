@@ -1,0 +1,71 @@
+.blogNew {
+  background-color: #f3f3f3;
+  height: 330px;
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .blogImgTop {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background-color: silver;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 0 16px;
+    display: flex;
+    align-items: flex-start;
+
+    .nouveaute {
+      padding: 7px 12px;
+      background-color: rgb(255, 81, 81);
+      font-size: 12px;
+      color: white;
+    }
+  }
+
+  .descBlog {
+    padding: 16px;
+
+    .titre {
+      font-size: 20px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .publication {
+      font-size: 14px;
+      font-weight: 700;
+      color: gray;
+      margin-top: 18px;
+    }
+  }
+}
+
+.grid_left {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 756px) {
+  .grid_left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    padding-right: 16px;
+  }
+  .contentGrid {
+    width: auto;
+    position: relative;
+    padding: 12px 16px;
+    margin-right: 12px;
+  }
+
+  .screenGrid {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 1px solid;
+  }
+}
